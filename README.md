@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 
-## 📖 Description
+## Description
 
 Ce projet vise à collecter, nettoyer, enrichir et agréger des données issues d’un site e-commerce et de points de vente physiques afin de générer des indicateurs clés (KPI) quotidiens et mensuels.
 
@@ -17,7 +17,7 @@ Ce projet vise à collecter, nettoyer, enrichir et agréger des données issues 
 4. Agrégation (KPI par jour et par mois)
 
 
-## 🗂️ Structure du projet
+## Structure du projet
 
 ```bash
 commerce-analytics/
@@ -36,7 +36,7 @@ commerce-analytics/
 ```
 
 
-## ⚙️ Installation
+## Installation
 
 1. Cloner le projet :
 
@@ -62,7 +62,7 @@ pip install -r requirements.txt
 4. Ajouter le fichier Service Account JSON dans `dags/common/`.
 
 
-## 🚀 Exécution
+## Exécution
 
 1️⃣ Extraction :
 
@@ -90,7 +90,7 @@ python aggregate.py
 ```
 
 
-## 📊 KPI générés
+## KPI générés
 
 | Type               | Source                 | Indicateur         | Périodicité |
 | ------------------ | ---------------------- | ------------------ | ----------- |
@@ -99,7 +99,7 @@ python aggregate.py
 | Chiffre d’affaires | enriched\_data/orders  | Somme du `revenue` | Mensuel     |
 
 
-## 🛠️ Dépendances
+## Dépendances
 
 * Python 3.11
 * pandas
@@ -109,7 +109,7 @@ python aggregate.py
 * pathlib (standard)
 
 
-## 🔑 Bonnes pratiques
+## Bonnes pratiques
 
 * Respecter la structure `année/mois/jour` pour tous les fichiers.
 * Vérifier la présence du fichier Service Account JSON avant exécution.
